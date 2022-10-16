@@ -1,6 +1,7 @@
 # Voting APP
 
 1- Clone this repo and access the `VOTING-APP` folder
+
 2- Create the `voting-app` pod and service
 ```
 kubectl create -f .\voting-app-pod.yaml
