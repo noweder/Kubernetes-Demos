@@ -7,11 +7,11 @@
 kubectl create -f .\voting-app-pod.yaml
 kubectl create -f .\voting-app-service.yaml
 ```
-3- Using minikube, run below command to get the URL (for example: http://127.0.0.1:50748)
+3- Using minikube, generate the URL to access the `voting-app` using below command
 ```
 minikube service voting-service --url
 ```
-4- Run the URL in your web browser to access the voting app
+4- Access the URL in your web browser to access the voting app
 
 5- Create the `redis` and `postgres` pods and services
 ```
@@ -28,4 +28,9 @@ kubectl create -f .\worker-pod.yaml
 ```
 kubectl create -f .\result-app-pod.yaml
 kubectl create -f .\result-app-service.yaml
+```
+8- Access the URL in your web browser to access the results app
+```
+minikube service results-service --url
+
 ```
