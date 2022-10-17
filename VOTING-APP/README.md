@@ -1,6 +1,7 @@
 # Voting APP
 
-This is a sample APP to vote on either cats or dogs and then show the voting results. this APP consist of below microservices:
+This is a sample APP to vote on either cats or dogs and then show the voting results. This APP consist of below microservices:
+
 - Voting APP service which provides a web interface to vote
 - Redis
 - PostgreSQL service as the database to store the voting results
@@ -12,33 +13,44 @@ You can follow below steps to run this application on Kubernetes deployment usin
 1- Clone this repo and access the `VOTING-APP` folder
 
 2- Create the `voting-app` pod and service
+
 ```
 kubectl create -f .\voting-app-pod.yaml
 kubectl create -f .\voting-app-service.yaml
 ```
+
 3- Using minikube, generate the URL to access the `voting-app` using below command
+
 ```
 minikube service voting-service --url
 ```
+
 4- Generate the URL in your web browser to access the voting app
 
 5- Create the `redis` and `postgres` pods and services
+
 ```
 kubectl create -f .\redis-pod.yaml
 kubectl create -f .\redis-service.yaml
 kubectl create -f .\postgres-pod.yaml
 kubectl create -f .\postgres-service.yaml
 ```
+
 6- Create the `worker` pod
+
 ```
 kubectl create -f .\worker-pod.yaml
 ```
+
 7- Create the `result-app` pod and service
+
 ```
 kubectl create -f .\result-app-pod.yaml
 kubectl create -f .\result-app-service.yaml
 ```
+
 8- Generate the URL in your web browser to access the results app
+
 ```
 minikube service results-service --url
 
