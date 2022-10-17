@@ -11,7 +11,7 @@ This is a sample APP to vote on either cats or dogs and then show the voting res
 - result-service with NodePort type to expose the result APP
 - db and redis services with type ClusterIP for required internal communication
 
-!diagram](https://github.com/dockersamples/example-voting-app/blob/5edf3f7c8d319dd0fea255739b951d3906a24e00/architecture.png)
+![diagram](https://github.com/dockersamples/example-voting-app/blob/5edf3f7c8d319dd0fea255739b951d3906a24e00/architecture.png)
 
 
 You can follow below steps to run this application on Kubernetes deployment using `Minikube`.
