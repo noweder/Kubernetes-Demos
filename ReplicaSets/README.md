@@ -2,5 +2,6 @@
 
 Access this folder and run below command to create the ReplicaSet
 
-```kubectl create -f ./replicaset.yaml
+```
+kubectl create -f ./replicaset.yaml
 ```
