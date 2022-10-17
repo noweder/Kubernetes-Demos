@@ -62,4 +62,4 @@ minikube service results-service --url
 
 ```
 
-`Note`: Instead of creating each pod separately, you can you can leverage the deployment files included in the repo.
+`Note`: Instead of creating each pod separately, you can leverage the deployment files included in the repo.
