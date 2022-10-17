@@ -11,7 +11,7 @@ kubectl create -f .\voting-app-service.yaml
 ```
 minikube service voting-service --url
 ```
-4- Access the URL in your web browser to access the voting app
+4- Generate the URL in your web browser to access the voting app
 
 5- Create the `redis` and `postgres` pods and services
 ```
@@ -29,8 +29,10 @@ kubectl create -f .\worker-pod.yaml
 kubectl create -f .\result-app-pod.yaml
 kubectl create -f .\result-app-service.yaml
 ```
-8- Access the URL in your web browser to access the results app
+8- Generate the URL in your web browser to access the results app
 ```
 minikube service results-service --url
 
 ```
+
+`Note`: Instead of creating each pod separately, you can you can leverage the deployment files included in the repo.
