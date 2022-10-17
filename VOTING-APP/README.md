@@ -1,12 +1,15 @@
 # Voting APP
 
-This is a sample APP to vote on either cats or dogs and then show the voting results. This APP consist of below microservices:
+This is a sample APP to vote on either cats or dogs and then show the voting results. This APP consist of below components:
 
-- Voting APP service which provides a web interface to vote
+- Voting APP pod which provides a web interface to vote
 - Redis
-- PostgreSQL service as the database to store the voting results
-- Worker service which reads from the Redis service and writes on PostgreSQL database
-- Result APP service which provide a web interface to show the voting results
+- PostgreSQL pod as the database to store the voting results
+- Worker pod which reads from the Redis service and writes on PostgreSQL database
+- Result APP pod which provide a web interface to show the voting results
+- voting-service with NodePort type to expose the voting APP
+- result-service with NodePort type to expose the result APP
+- db and redis services with type ClusterIP for required internal communication
 
 You can follow below steps to run this application on Kubernetes deployment using `Minikube`.
 
